@@ -1,4 +1,4 @@
-# SpaMIE: Spatial Multi-Omics Imputation and Embedding
+<img width="595" height="294" alt="image" src="https://github.com/user-attachments/assets/12f4c2c4-82e1-400f-81cc-fd2ae2e267ca" /># SpaMIE: Spatial Multi-Omics Imputation and Embedding
 
 [![Paper](https://img.shields.io/badge/Paper-ScienceDirect-blue)](https://www.sciencedirect.com/science/article/pii/S2667237526001566)
 [![Documentation Status](https://img.shields.io/badge/docs-tutorials-brightgreen.svg)](https://spamie-tutorials.readthedocs.io/en/latest/)
@@ -30,3 +30,12 @@ git clone [https://github.com/xxdwdwd/SpaMIE.git](https://github.com/xxdwdwd/Spa
 cd SpaMIE
 conda create -n SpaMIE_env python=3.9
 conda activate SpaMIE_env
+
+### 2. Install core dependencies
+```bash
+# dependencies
+pip install -r requirements.txt
+# SpaMIE
+pip install -e .
+# or pip install dist/SpaMIE-0.1.0-py3-none-any.whl
+```
