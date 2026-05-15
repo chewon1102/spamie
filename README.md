@@ -1,4 +1,3 @@
-<img width="595" height="294" alt="image" src="[https://github.com/user-attachments/assets/12f4c2c4-82e1-400f-81cc-fd2ae2e267ca](https://github.com/user-attachments/assets/12f4c2c4-82e1-400f-81cc-fd2ae2e267ca)" />
 
 # SpaMIE: Spatial Multi-Omics Imputation and Embedding
 
