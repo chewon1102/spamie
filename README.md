@@ -31,7 +31,8 @@ cd SpaMIE
 conda create -n SpaMIE_env python=3.9
 conda activate SpaMIE_env
 ```
-### 1. Install core dependencies
+
+### 2. Install core dependencies
 ```bash
 # dependencies
 pip install -r requirements.txt
