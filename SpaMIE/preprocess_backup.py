@@ -22,7 +22,7 @@ def preprocessing(adata_omics1, adata_omics2, task, test_idx_name, y_pred_name,
     random_seed=2024
     fix_seed(random_seed)
     
-    if datatype not in ['Stereo-CITE-seq','Stereo-CITE-seq_rna', 'Spatial_RNA_Epigenome','Spatial_Epigenome_RNA', 'mouseEmbryo', 'Spatial-epigenome-transcriptome-RNA-ATAC', 'Spatial-epigenome-transcriptome-ATAC-RNA', 'simu', 'spots', 'my_data']:
+    if datatype not in ['Stereo-CITE-seq','Stereo-CITE-seq_rna', 'Spatial_RNA_Epigenome','Spatial_Epigenome_RNA', 'mouseEmbryo', 'Spatial-epigenome-transcriptome-RNA-ATAC', 'Spatial-epigenome-transcriptome-ATAC-RNA', 'simu', 'spots']:
       raise ValueError("The datatype is not supported now. SAGE supports 'Stereo-CITE-seq', 'Spatial-ATAC-RNA-seq'. We would extend SpaMIE for more data types. ") 
      
     if task =='Prediction':
@@ -48,13 +48,6 @@ def preprocessing(adata_omics1, adata_omics2, task, test_idx_name, y_pred_name,
             # Protein
             adata_omics2 = clr_normalize_each_cell(adata_omics2)
             adata_omics2.obsm['feat'] = pca(adata_omics2, n_comps=adata_omics2.n_vars-1)
-        elif datatype == 'my_data':
-            adata_omics2 = adata_omics2[adata_omics1.obs_names].copy()
-            
-            # Use existing embeddings already stored in the h5ad files 
-            # Recall that the datasets have already been preprocessed 
-            adata_omics1.obsm['feat'] = adata_omics1.obsm['feat']
-            adata_omics2.obsm['feat'] = adata_omics2.obsm['feat'] 
 
         
         elif datatype == 'Spatial-epigenome-transcriptome-RNA-ATAC':  
@@ -113,32 +106,14 @@ def preprocessing(adata_omics1, adata_omics2, task, test_idx_name, y_pred_name,
 
         elif datatype == 'simu':
             n_comps = 40
-
             if batch:
-                sc.pp.pca(
-                    adata_omics1,
-                    use_highly_variable=False,
-                    n_comps=n_comps
-                )
+                sc.pp.pca(adata_omics1, use_highly_variable=False, n_comps=n_comps)
+                sc.external.pp.harmony_integrate(adata_omics1, key='batch', adjusted_basis='feat')
+            else: 
+                adata_omics1.obsm['feat'] = pca(adata_omics1, n_comps=n_comps)# adata_omics2.n_vars-1
 
-                sc.external.pp.harmony_integrate(
-                    adata_omics1,
-                    key='batch',
-                    adjusted_basis='X_pca'
-                )
-
-                adata_omics1.obsm['feat'] = adata_omics1.obsm['X_pca']
-
-            else:
-                adata_omics1.obsm['feat'] = pca(
-                    adata_omics1,
-                    n_comps=n_comps
-                )
-
-            adata_omics2.obsm['feat'] = pca(
-                adata_omics2,
-                n_comps=n_comps
-            )
+            adata_omics2.obsm['feat'] = pca(adata_omics2, n_comps=n_comps)
+        
         elif datatype == 'Spatial_RNA_Epigenome':
             # RNA
             sc.pp.filter_genes(adata_omics1, min_cells=10)
