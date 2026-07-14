@@ -1,0 +1,2 @@
+Mean Pearson: 0.4791
+RMSE: 0.8668

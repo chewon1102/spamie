@@ -1,0 +1,16 @@
+Graph Mode,Feature,r,p
+attention,Mean Raw Expression,0.3524,1.149093829677363e-09
+attention,Detection Rate,0.674,1.063200997285642e-38
+attention,CLR Variance,0.5967,1.3627589041920447e-28
+union,Mean Raw Expression,0.2583,1.1213789288955531e-05
+union,Detection Rate,0.5139,2.0938730808756644e-20
+union,CLR Variance,0.4412,7.293773541493483e-15
+intersection,Mean Raw Expression,-0.1227,0.03945273265156433
+intersection,Detection Rate,0.0739,0.2159037701748511
+intersection,CLR Variance,0.084,0.15941327093768135
+spatial,Mean Raw Expression,0.3709,1.26764205039185e-10
+spatial,Detection Rate,0.7478,9.817889269222135e-52
+spatial,CLR Variance,0.6208,1.928625612367331e-31
+feature,Mean Raw Expression,0.237,5.833298892569264e-05
+feature,Detection Rate,0.3728,9.996653483409316e-11
+feature,CLR Variance,0.3945,6.126334129691603e-12

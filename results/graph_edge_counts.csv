@@ -1,0 +1,6 @@
+Graph Mode,RNA Spatial,RNA Feature,Protein Spatial,Protein Feature
+attention,6126,57822,6126,61128
+union,63560,,65668,
+intersection,328,,1382,
+spatial,6126,,6126,
+feature,57822,,61128,
