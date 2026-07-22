@@ -2,15 +2,60 @@ Graph Mode,Feature,r,p
 attention,Mean Raw Expression,0.3524,1.149093829677363e-09
 attention,Detection Rate,0.674,1.063200997285642e-38
 attention,CLR Variance,0.5967,1.3627589041920447e-28
+attention,RMSE,0.7048,1.1778542121360024e-43
 union,Mean Raw Expression,0.2583,1.1213789288955531e-05
 union,Detection Rate,0.5139,2.0938730808756644e-20
 union,CLR Variance,0.4412,7.293773541493483e-15
+union,RMSE,0.5191,7.37680839900231e-21
 intersection,Mean Raw Expression,-0.1227,0.03945273265156433
 intersection,Detection Rate,0.0739,0.2159037701748511
 intersection,CLR Variance,0.084,0.15941327093768135
+intersection,RMSE,-0.0065,0.9135303627533983
 spatial,Mean Raw Expression,0.3709,1.26764205039185e-10
 spatial,Detection Rate,0.7478,9.817889269222135e-52
 spatial,CLR Variance,0.6208,1.928625612367331e-31
+spatial,RMSE,0.7597,2.950026224174056e-54
 feature,Mean Raw Expression,0.237,5.833298892569264e-05
 feature,Detection Rate,0.3728,9.996653483409316e-11
 feature,CLR Variance,0.3945,6.126334129691603e-12
+feature,RMSE,0.3887,1.3132238771082364e-11
+attention_cellfeat,Mean Raw Expression,0.2183,0.00022086330158424409
+attention_cellfeat,Detection Rate,0.4971,5.25101952968798e-19
+attention_cellfeat,CLR Variance,0.5628,5.809340913221915e-25
+attention_cellfeat,RMSE,0.3723,1.0585636711122423e-10
+union_cellfeat,Mean Raw Expression,0.1503,0.011495466624696719
+union_cellfeat,Detection Rate,0.4669,1.1237470401149216e-16
+union_cellfeat,CLR Variance,0.5314,5.913184063802945e-22
+union_cellfeat,RMSE,0.3144,6.871899696992249e-08
+intersection_cellfeat,Mean Raw Expression,0.0918,0.12420651914031204
+intersection_cellfeat,Detection Rate,0.4425,5.9632639264004575e-15
+intersection_cellfeat,CLR Variance,0.4695,7.283072861944168e-17
+intersection_cellfeat,RMSE,0.2721,3.543435122211912e-06
+spatial_cellfeat,Mean Raw Expression,0.241,4.332041869378532e-05
+spatial_cellfeat,Detection Rate,0.633,5.5806004349904085e-33
+spatial_cellfeat,CLR Variance,0.6608,9.27972270918946e-37
+spatial_cellfeat,RMSE,0.4467,3.097838284003934e-15
+feature_cellfeat,Mean Raw Expression,0.1463,0.013917080097227323
+feature_cellfeat,Detection Rate,0.4724,4.416459323150929e-17
+feature_cellfeat,CLR Variance,0.5249,2.2863805540510747e-21
+feature_cellfeat,RMSE,0.3109,9.833215877136847e-08
+attention_uncertainty,Mean Raw Expression,0.2506,2.059795600729675e-05
+attention_uncertainty,Detection Rate,0.6958,3.8302895830887515e-42
+attention_uncertainty,CLR Variance,0.6313,9.101577418082165e-33
+attention_uncertainty,RMSE,0.6387,1.017007652776654e-33
+union_uncertainty,Mean Raw Expression,0.1296,0.029623867124609946
+union_uncertainty,Detection Rate,0.5525,6.167759110287041e-24
+union_uncertainty,CLR Variance,0.5458,2.696928278233649e-23
+union_uncertainty,RMSE,0.4827,7.201437285322085e-18
+intersection_uncertainty,Mean Raw Expression,-0.0281,0.6385169709576675
+intersection_uncertainty,Detection Rate,0.2508,2.0386063188534213e-05
+intersection_uncertainty,CLR Variance,0.3034,2.0364680961685078e-07
+intersection_uncertainty,RMSE,0.1702,0.004154636556456116
+spatial_uncertainty,Mean Raw Expression,0.3268,1.9171605010580925e-08
+spatial_uncertainty,Detection Rate,0.7956,7.01451360000864e-63
+spatial_uncertainty,CLR Variance,0.6982,1.5428031829457796e-42
+spatial_uncertainty,RMSE,0.7259,2.0158197334617137e-47
+feature_uncertainty,Mean Raw Expression,0.1118,0.060895680829967797
+feature_uncertainty,Detection Rate,0.4712,5.44366443136634e-17
+feature_uncertainty,CLR Variance,0.5117,3.199094557420302e-20
+feature_uncertainty,RMSE,0.4317,3.1186914016740447e-14

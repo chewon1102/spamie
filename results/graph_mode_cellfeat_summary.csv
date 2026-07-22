@@ -1,0 +1,6 @@
+Graph Mode,Mean Pearson,Median Pearson,Mean Spearman,Median Spearman,Mean RMSE,Median RMSE
+attention_cellfeat,0.1251,0.105,0.1138,0.1014,0.3983,0.3275
+union_cellfeat,0.1241,0.0978,0.1106,0.0949,0.3951,0.3282
+intersection_cellfeat,0.0964,0.0668,0.0899,0.0683,0.4169,0.335
+spatial_cellfeat,0.1429,0.1304,0.1363,0.127,0.4124,0.3297
+feature_cellfeat,0.1241,0.0964,0.111,0.0955,0.3951,0.3281

@@ -1,0 +1,26 @@
+Graph Mode,Detection Quantile,n_proteins,mean_pearson_baseline,mean_pearson_cellfeat,mean_gap
+attention,Q1,57,0.0234,0.0125,-0.0109
+attention,Q2,56,0.0714,0.0704,-0.0011
+attention,Q3,57,0.0985,0.1129,0.0144
+attention,Q4,56,0.1272,0.1569,0.0297
+attention,Q5,57,0.1773,0.2706,0.0933
+union,Q1,57,0.014,0.0392,0.0252
+union,Q2,56,0.0358,0.0762,0.0404
+union,Q3,57,0.0545,0.1184,0.0639
+union,Q4,56,0.0666,0.1377,0.0711
+union,Q5,57,0.104,0.2471,0.1431
+intersection,Q1,57,-0.0023,0.0786,0.0809
+intersection,Q2,56,0.0213,0.1198,0.0985
+intersection,Q3,57,0.0107,0.0943,0.0836
+intersection,Q4,56,0.0049,0.079,0.0741
+intersection,Q5,57,0.0176,0.11,0.0924
+spatial,Q1,57,0.0406,0.0106,-0.03
+spatial,Q2,56,0.1102,0.0849,-0.0253
+spatial,Q3,57,0.1324,0.1117,-0.0207
+spatial,Q4,56,0.2123,0.2158,0.0035
+spatial,Q5,57,0.2554,0.2891,0.0337
+feature,Q1,57,0.0022,0.057,0.0548
+feature,Q2,56,0.0206,0.0968,0.0762
+feature,Q3,57,0.0399,0.1386,0.0987
+feature,Q4,56,0.0297,0.1081,0.0784
+feature,Q5,57,0.0638,0.2183,0.1546

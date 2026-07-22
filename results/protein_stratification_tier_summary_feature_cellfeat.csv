@@ -1,0 +1,4 @@
+Pearson Tier,n_proteins,mean_pearson,mean_rmse,mean_raw_expression,mean_detection_rate,mean_clr_variance
+Low,94,0.0012,0.2481,0.976,0.3473,0.0627
+Medium,94,0.0969,0.3598,2.3241,0.5581,0.1251
+High,94,0.2744,0.581,10.9574,0.7288,0.2362
